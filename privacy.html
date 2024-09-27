@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top selection of online casinos</title>
+    <link rel="stylesheet" href="style/css.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="absolute_menu" data-act="">
+        <a href="index.html#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="choices.html" style="margin-bottom: 0;">Your Privacy Choices</a>
+      </div>
+    <div class="bg_blur">
+        <div class="top">
+            <div class="top_blokc">
+                <a href="https://topsite-review.com/"><img src="img/logo.png" alt=""></a>
+                <img src="img/hamburger.png" id="hamburger" alt="">
+            
+            </div>
+        </div>
+</div>
+
+
+<div class="text_container">
+    <div class="text_block privacy_text">
+        <h1>Privacy Policy</h1>
+
+        <p><strong>Introduction</strong></p>
+        <p>Welcome to Top selection of online casinos! Your privacy is very important to us, and we are committed to safeguarding your personal information. This Privacy Policy outlines the types of data we collect, how we use it, and the measures we take to ensure your information is protected when you visit our website, <a href="topsite-review.com">topsite-review.com</a>.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We may collect the following types of information when you use our website:</p>
+        <ul>
+            <li><strong>Personal Information:</strong> When you register on our site, subscribe to our newsletter, or fill out a form, we may collect information such as your name, email address, and phone number.</li>
+            <li><strong>Non-Personal Information:</strong> We collect non-personal data such as browser type, operating system, and the web pages you visit. This information helps us improve our services and understand how users interact with our site.</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect for various purposes, including:</p>
+        <ul>
+            <li>To personalize your experience on our website.</li>
+            <li>To improve our website and services.</li>
+            <li>To process transactions.</li>
+            <li>To send periodic emails regarding your account or other services.</li>
+            <li>To respond to inquiries, questions, and/or other requests.</li>
+        </ul>
+
+        <h2>Cookies</h2>
+        <p>Our website uses cookies to enhance your experience. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your web browser (if you allow) that enables the site’s or service provider's systems to recognize your browser and capture and remember certain information.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>We may employ third-party companies and individuals to facilitate our website, provide services on our behalf, perform website-related services, or assist us in analyzing how our website is used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+        <h2>Security</h2>
+        <p>We prioritize the security of your personal information and take reasonable measures to protect it from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>Links to Other Sites</h2>
+        <p>Our website may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+    
+    </div>
+</div>
+
+
+<footer>
+    <div class="contact_top" id="contact">
+    <div class="contact_blokc">
+        <div class="logoo_block">
+            <a href="https://www.gambleaware.org/ "><img src="img/footer10.png" alt=""></a>
+     
+        </div>
+     
+    <div class="about">
+        <a href="index.html#about">About Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="choices.html">Your Privacy Choices</a>
+    </div>
+    <div class="contact">
+        <h4>Contact Us:</h4>
+        <img src="img/img1.png" alt="">
+        <p>support@topsite-review.com</p>
+    </div>
+    </div>
+</div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        
+    $('#hamburger').on('click',function(){
+        if($(this).attr('data-act') == 'act'){
+
+            $(this).attr('data-act','');
+        $('.absolute_menu').css('display','none');
+        }
+        else{
+            $(this).attr('data-act','act');
+        $('.absolute_menu').css('display','flex'); 
+        }
+        
+    });
+ 
+    setTimeout(() => {
+        $('.pop_best_offer').css('display','flex');
+    }, 60000);
+    $('.exit').on('click',function(){
+        $('.pop_best_offer').css('display','none');
+    });
+    $(document).on('touchstart',function (e){ // событие клика по веб-документу (or .on(touchstart click))
+		var div = $("#besttt"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.pop_best_offer').css('display','none'); // скрываем его
+		}
+	});
+    </script>
+</body>
+</html>
