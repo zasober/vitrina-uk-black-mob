@@ -661,20 +661,22 @@ margin-top: 0;
 .mobii .bottom_jack h2{
     color: #FFFFFF;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0px;
     margin-top: 0px;
     height: fit-content;
     margin-top: 15px;
+    font-style: italic;
 }
 .mobii .bottom_jack h3{
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 0px;
     margin-top: 0px;
+    font-style: italic;
 }
 .mobii .bottom_jack p{
     color: #FFFFFF;
@@ -982,5 +984,16 @@ padding-bottom: 5px;
     .are_blokc{
         align-items: center;
         width: 90%;
+    }
+}
+@media screen and (max-width: 450px){
+    .choice h3{
+        font-size: 14px;
+    }
+    .choice .legal{
+        font-size: 14px;
+    }
+    #logo3{
+        margin-right: 0;
     }
 }
